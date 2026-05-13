@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ThermoGuard Premium</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="logo">ThermoGuard</div>
+
+  <ul id="menu">
+    <li><a href="#home">الرئيسية</a></li>
+    <li><a href="#features">المميزات</a></li>
+    <li><a href="#about">عن المنتج</a></li>
+    <li><a href="#contact">تواصل معنا</a></li>
+  </ul>
+
+  
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-text">
+    <h1>حافظ حرارة بتصميم فاخر واحترافي</h1>
+    <p>يحافظ على مشروبك ساخن أو بارد لساعات طويلة أينما كنت.</p>
+
+    <button class="btn primary" onclick="openForm()">اطلب الآن</button>
+    <button class="btn outline" onclick="openDetails()">مزيد من التفاصيل</button>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8" />
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="features">
+  <div class="card">🔥 حرارة حتى 14 ساعة</div>
+  <div class="card">❄️ برودة حتى 24 ساعة</div>
+  <div class="card">💧 مانع تسريب 100%</div>
+  <div class="card">💎 تصميم فاخر</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="about-container">
+    <h2>عن ThermoGuard</h2>
+
+    <p>
+      ThermoGuard ليس مجرد حافظ حرارة، بل تجربة يومية فاخرة تساعدك على الحفاظ على مشروبك بأفضل درجة حرارة طوال اليوم.
+    </p>
+
+    <p>
+      مناسب للجامعة، العمل، والسفر، ويجمع بين الجودة العالية والتصميم العصري.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>تواصل معنا</h2>
+<div class="contact-box">
+  <div class="info">📞  27 144 34 59 972+ </div>
+  <div class="info">📧 support@thermoguard.com</div>
+  <div class="info">📍 فلسطين - غزة</div>
+  <div class="info">⏰ 9 صباحًا - 10 مساءً</div>
+</div>
+</section>
+```
+
+</section>
+<!-- DETAILS MODAL -->
+<div id="detailsPanel" class="details-panel">
+  <div class="details-box">
+    <span class="close" onclick="closeDetails()">✖</span>
+
+    <h2>✨ معلومات إضافية</h2>
+
+    <p>كل ما تحتاج معرفته عن ThermoGuard:</p>
+
+    <div class="grid">
+      <div>🔥 حرارة حتى 14 ساعة</div>
+      <div>❄️ برودة حتى 24 ساعة</div>
+      <div>💧 مانع تسريب 100%</div>
+      <div>🧊 ستانلس ستيل فاخر</div>
+      <div>🎒 مناسب للسفر والعمل</div>
+      <div>💎 تصميم عصري أنيق</div>
+    </div>
+  </div>
+</div>
+
+<!-- ORDER FORM -->
+<div id="form" class="modal">
+  <div class="box">
+    <span class="close" onclick="closeForm()">✖</span>
+
+    <h2>طلب المنتج</h2>
+
+    <input type="text" placeholder="الاسم">
+    <input type="text" placeholder="رقم الهاتف">
+    <input type="email" placeholder="الإيميل">
+
+    <button class="btn primary full" onclick="success()">إرسال الطلب</button>
+  </div>
+</div>
+
+<!-- SUCCESS -->
+<div id="msg" class="msg">✅ تم إرسال الطلب بنجاح!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
